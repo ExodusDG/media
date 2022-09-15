@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+:root {
+    --PurpleColor: rgb(252, 55, 146);
+    --BlackColor: rgb(45, 45, 45);
+}
+
+.container {
+    width: 1124px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    background: #0f0e24;
+}
+
+.navbar img {
+    width: 150px;
+}
+
+.headerContent {
+    background-image: url('../images/Background-Header.webp');
+    height: 660px;
+    background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.headerContent .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.headerContentLeft {
+    width: 620px;
+}
+
+.headerContent img {
+    height: 500px;
+}
+
+.headerContentLeft h2 {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.headerContentLeft h1 {
+    color: var(--PurpleColor);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.3em;
+}
+
+.headerContentLeft p {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 1.3em;
+}
+
+.bigButton {
+    color: rgb(255, 255, 255);
+    background: rgb(185, 14, 223);
+    font-size: 24px;
+    transition: 0.3s;
+    padding: 10px 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 40px;
+}
+
+.bigButton:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0px 10px 25px 0px rgb(224 87 255 / 31%);
+}
+
+.headerLeftLinkBottom {
+    display: block;
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* PHOLOSOFY */
+
+.philosofy {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.philosofyContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.philosofyContent img {
+    width: 525px;
+}
+
+.philosofyText h1 {
+    color: #000;
+    font-weight: 800;
+    font-size: 32px;
+
+}
+
+.philosofyText {
+    width: 45%;
+}
+
+.philosofyText p {
+    text-align: left;
+    font-size: 18px;
+    color: rgb(32, 22, 82);
+    margin-top: 15px;
+}
+
+/* OFFER */
+
+.offer {
+    background-image: url('../images/Background-Header-2.webp');
+    height: 660px;
+    background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.offerContent {
+    top: 80px;
+    position: relative;
+}
+
+.offerContent h2 {
+    font-weight: 400;
+}
+
+.offerContent h1 {
+    font-size: 48px;
+}
+
+.offerContent p {
+    font-size: 18px;
+    line-height: 1.42857143;
+}
+
+.offerContentRight li {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.offerContent {
+    display: flex;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.offerContentRight h2 {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+}
+
+.offerContentTitle {
+    font-size: 28px !important;
+    color: rgb(230, 230, 230);
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+.offerContentRight {
+    width: 525px;
+}
+
+.offerContentLeft {
+    width: 525px;
+}
+
+.offerContentRight ul {
+    margin-top: 30px;
+}
+
+.offerContentLeft p {
+    font-weight: 400;
+}
+
+/* BRANDS */
+
+.brands h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+    color: rgb(32, 22, 82);
+}
+
+.brands {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.brandsWrapper {
+    width: 824px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.brandsWrapper img {
+    width: 150px;
+    margin: 0 auto;
+    -webkit-filter: grayscale(51);
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.brandsWrapper img:hover {
+    -webkit-filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.brandsWrapper {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* TEAM */
+
+.team {
+    background-image: url('../images/Background-Header-4.webp');
+    height: 660px;
+    background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.teamItem img {
+    width: 110px;
+    border-radius: 100%;
+    border: 5px solid #610a33;
+}
+
+.teamItemName {
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.3em;
+
+}
+
+.teamItemRole {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(252, 55, 146);
+    font-weight: 400;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+}
+
+.teamItem {
+    text-align: center;
+}
+
+.teamLeft {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teamItem {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.teamContent {
+    display: flex;
+    justify-content: space-between;
+    top: 100px;
+    position: relative;
+}
+
+.teamRight h1 {
+    color: var(--PurpleColor);
+}
+
+.teamRight p {
+    color: white;
+    line-height: 1.42857143;
+}
+
+.teamRight .bigButton {
+    top: 50px;
+}
+
+/* CALL */
+
+.callRight img {
+    width: 160px;
+    border: 5px solid #610a33;
+    border-radius: 50%;
+}
+
+.callLeft {
+    min-width: 545px;
+}
+
+.callContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.callRight h2 {
+    color: rgb(252, 55, 146);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.callRight h1 {
+    color: rgb(32, 22, 82);
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.callRight p {
+    text-align: left;
+    font-size: 18px;
+    color: rgb(45, 45, 45);
+    line-height: 1.4em;
+    margin-top: 25px;
+}
+
+.callRight li {
+    color: rgb(45, 45, 45);
+    font-weight: 400;
+    margin-top: 0px;
+    display: flex;
+    align-items: baseline;
+}
+
+.callRight span {
+    color: rgb(45, 45, 45);
+    font-weight: 800;
+}
+
+.callRight i {
+    margin-right: 10px;
+}
+
+.callRight li>p {
+    font-size: 16px;
+}
+
+.callLeft {
+    box-shadow: 0px 10px 39px 0px rgb(0 0 0 / 13%);
+    border-radius: 10px;
+}
+
+.callRight {
+    width: 525px;
+}
+
+.call {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+/* FREE */
+
+.free {
+    background-image: url('../images/logotypes/background-case-study.webp');
+    height: 660px;
+    background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.freeContent {
+    padding-top: 70px;
+}
+
+.freeContent h2 {
+    color: rgb(88, 88, 88);
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.freeContent h1 {
+    text-align: center;
+    color: rgb(252, 55, 146);
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.freeContentBlock img {
+    width: 525px;
+}
+
+.freeContentBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.freeContentBlock>div {
+    width: 525px;
+}
+
+.freeContentBlock p {
+    font-size: 20px;
+    color: rgb(31, 31, 31);
+    margin-bottom: 40px;
+}
+
+.freeContentBlock .bigButton {
+    background: rgb(252, 55, 146);
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-top: 5px;
+}
+
+.freeContentBlock {
+    margin-top: 80px;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url('../images/Background-Header-5.webp');
+    height: 660px;
+    background-size: 100% 100% !important;
+    -webkit-background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+.footerContainer {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.footerTitle {
+    color: rgb(252, 55, 146);
+    font-weight: 800;
+    font-size: 56px;
+}
+
+.footerDesc {
+    width: 750px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    color: rgb(229, 229, 229);
+    margin-top: 10px;
+}
+
+.footerBottom img {
+    width: 150px;
+}
+
+.footerBottom p {
+    font-size: 14px;
+    color: rgb(229, 229, 229);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footerBottomBold {
+    font-weight: 700 !important;
+}
+
+.footerBottom {
+    margin-top: 70px;
+}
+
+@media (max-width: 1141px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .offerContentLeft {
+        width: 47%;
+    }
+
+    .offerContentRight {
+        width: 47%;
+    }
+
+    .offerContent h1 {
+        font-size: 38px;
+    }
+
+    .callLeft {
+        min-width: 45%;
+    }
+
+    .callRight {
+        width: 45%;
+    }
+
+    .freeContentBlock img {
+        width: 45%;
+        height: 300px;
+    }
+
+    .freeContentBlock>div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 769px) {
+    .headerContent .container {
+        display: block;
+    }
+
+    .headerContentLeft {
+        width: 100%;
+    }
+
+    .headerContent {
+        height: auto;
+    }
+
+    .headerContent img {
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+    }
+
+    .philosofyContent {
+        display: block;
+    }
+
+    .philosofyContent img {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .philosofyText {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .offer {
+        height: auto;
+    }
+
+    .offerContent {
+        display: block;
+    }
+
+    .offer {
+        height: auto;
+        padding-bottom: 120px;
+    }
+
+    .offerContentRight {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .brandsWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teamContent {
+        display: block;
+    }
+
+    .team {
+        height: auto;
+        padding-bottom: 250px;
+    }
+
+    .callContent {
+        flex-wrap: wrap-reverse;
+    }
+
+    .callContent>div {
+        width: 100%;
+    }
+
+    .freeContentBlock {
+        display: block;
+        text-align: center;
+    }
+
+    .freeContentBlock img {
+        width: 80%;
+        height: auto;
+    }
+
+    .free {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .freeContentBlock>div {
+        width: 100%;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .footerContainer {
+        text-align: center;
+        padding-top: 150px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footerDesc {
+        width: 100%;
+    }
+
+    .footerTitle {
+        font-size: 36px;
+    }
+
+    .brandsWrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 491px) {
+    .brands h1 {
+        font-size: 32px;
+    }
+    .freeContent h1 {
+        font-size: 22px;
+    }
+    .bigButton {
+        font-size: 20px;
+    }
+    .footerDesc {
+        font-size: 18px;
+    }
+    .bigButton {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .headerContentLeft h1 {
+        font-size: 28px;
+    }
+    .headerContentLeft h2 {
+        font-size: 20px;
+    }
+    .headerContentLeft p {
+        font-size: 16px;
+    }
+
+}
